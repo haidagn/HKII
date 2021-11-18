@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5f8ac9">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
     <!-- links ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -18,7 +26,7 @@
     <!-- link css files -->
     <!-- <link rel="stylesheet" href="./assets/css/app.css"> -->
     <link rel="stylesheet" href="./assets/sass/app.css">
-    <title>Document</title>
+    <title>Flance - Công việc của bạn</title>
 </head>
 
 <body id="body-main">
@@ -244,17 +252,19 @@
                             </div>
                             <div class="post-item">
                                 <div class="item">
-                                    <img src="./assets/images/navbar/img-2.png" alt="">
+                                    <div class="item-banner"><img src="./assets/images/navbar/blog-1.jpg" alt=""></div>
                                     <div class="item-content">
-                                        <div class="day">18 Tháng 10, 2021</div>
-                                        <div class="title">Cách xây dựng thế giới cho riêng bạn và gia đình</div>
+                                        <div class="day">28 Tháng 11, 2021</div>
+                                        <div class="title">Dẫn đầu xu thế tìm việc online thời đại 4.0 - công nghệ tìm
+                                            việc.
+                                        </div>
                                         <a href="">Đọc thêm</a>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/navbar/img-2.png" alt="">
+                                    <div class="item-banner"><img src="./assets/images/navbar/blog-2.jpg" alt=""></div>
                                     <div class="item-content">
-                                        <div class="day">18 Tháng 10, 2021</div>
+                                        <div class="day">25 Tháng 10, 2021</div>
                                         <div class="title">Cách xây dựng thế giới cho riêng bạn và gia đình</div>
                                         <a href="">Đọc thêm</a>
                                     </div>
@@ -868,63 +878,6 @@
     <script src="./assets/script/app.js"></script>
 
     <script>
-        // disabled login
-        const loginBtn = document.getElementById('loginbtn')
-        const input = document.getElementById('email')
-
-        input.addEventListener('keypress', (e) => {
-            const value = e.currentTarget.value;
-            if (value === "") {
-                loginBtn.disabled = true;
-            } else {
-                loginBtn.disabled = false;
-            }
-        })
-
-
-        // bật login
-        const openLoginBtn = document.querySelectorAll('[data-login-target]');
-        const closeLoginBtn = document.querySelectorAll('[data-login-close]');
-        const checkMark = document.getElementById('successanimation')
-
-        openLoginBtn.forEach(button => {
-            button.addEventListener('click', () => {
-                const login = document.querySelector(button.dataset.loginTarget)
-                openLogin(login)
-            })
-        })
-        closeLoginBtn.forEach(button => {
-            button.addEventListener('click', () => {
-                const login = button.closest('.body-login')
-                closeLogin(login)
-            })
-        })
-        function openLogin(login) {
-            if (login == null) return
-            login.classList.add('login-ative')
-            checkMark.classList.add('d-none')
-            checkMark.classList.remove('d-block')
-        }
-        function closeLogin(login) {
-            if (login == null) return
-            login.classList.remove('login-ative')
-            checkMark.classList.remove('d-none')
-            checkMark.classList.add('d-block')
-        }
-
-        // đăng Nhập
-        const openSucBtn = document.querySelectorAll('[data-success-target]');
-
-        openSucBtn.forEach(button => {
-            button.addEventListener('click', () => {
-                const success = document.querySelector(button.dataset.successTarget)
-                openSuc(success)
-            })
-        })
-        function openSuc(success) {
-            if (success == null) return
-            success.classList.add('success-ative')
-        }
     </script>
 </body>
 

@@ -1115,6 +1115,20 @@ a:hover {
           align-items: center;
 }
 
+.header .navs-links-dropdown-4 .post-item .item-banner {
+  min-width: 240px;
+  height: 115px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header .navs-links-dropdown-4 .post-item .item-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header .navs-links-dropdown-4 .post-item .item-content {
   display: -webkit-box;
   display: -ms-flexbox;
