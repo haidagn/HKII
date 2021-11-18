@@ -90,10 +90,8 @@
                         font-size: 14px;
                         font-weight: 400;
                         color: #182b39;
-
                         padding-left: 10px;
                     }
-
                     ion-icon {
                         color: #182b39;
                         font-size: 16px;
@@ -101,7 +99,6 @@
                     }
                 }
             }
-
             .profile:hover~.profile-popup {
                 opacity: 1;
                 visibility: visible;
@@ -109,5 +106,4 @@
             }
         }
     }
-
 }
