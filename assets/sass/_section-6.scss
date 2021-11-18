@@ -6,11 +6,12 @@
     height: 600px;
     display: flex;
     align-items: center;
+
     h2 {
         font-size: 48px;
         font-weight: 700;
         color: #FFFFFF;
-        
+
     }
 
     p {
@@ -30,6 +31,7 @@
         align-items: center;
         background-color: #FFFFFF;
         border-radius: 8px;
+
         a {
             color: $primary-color;
             font-size: 18px;
@@ -39,5 +41,11 @@
         ion-icon {
             font-size: 18px;
         }
+    }
+}
+
+@include maxW(320px) {
+    .section-6 {
+        display: none;
     }
 }

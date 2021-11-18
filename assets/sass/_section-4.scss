@@ -64,9 +64,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 40px 0;
+
             .item {
                 display: flex;
             }
+
             .check {
                 display: flex;
                 align-items: center;
@@ -91,5 +93,11 @@
                 color: $secondary-color;
             }
         }
+    }
+}
+
+@include maxW(320px) {
+    .section-4 {
+        display: none;
     }
 }

@@ -1992,6 +1992,12 @@ a:hover {
   color: #36B37E;
 }
 
+@media screen and (max-width: 320px) {
+  .section-1 {
+    display: none;
+  }
+}
+
 .section-2 {
   background: #ECF2FF;
   padding-bottom: 120px;
@@ -2077,6 +2083,20 @@ a:hover {
   max-width: 265px;
 }
 
+.section-2-slider-item .banner {
+  width: 235px;
+  height: 235px;
+  overflow: hidden;
+  border-radius: 36px;
+}
+
+.section-2-slider-item .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-2-slider-item .title {
   font-size: 20px;
   font-weight: 700;
@@ -2096,6 +2116,7 @@ a:hover {
   font-weight: 500;
   color: #8C98A4;
   padding: 0px 10px;
+  padding-top: 10px;
 }
 
 .section-2-slider-item .butn {
@@ -2120,6 +2141,12 @@ a:hover {
   font-weight: 700;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 320px) {
+  .section-2 {
+    display: none;
+  }
 }
 
 .section-3 {
@@ -2169,6 +2196,12 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   color: #5A7184;
+}
+
+@media screen and (max-width: 320px) {
+  .section-3 {
+    display: none;
+  }
 }
 
 .section-4 {
@@ -2284,6 +2317,12 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   color: #5A7184;
+}
+
+@media screen and (max-width: 320px) {
+  .section-4 {
+    display: none;
+  }
 }
 
 .section-5 .butn-slide {
@@ -2414,6 +2453,12 @@ a:hover {
   color: #ED7575;
 }
 
+@media screen and (max-width: 320px) {
+  .section-5 {
+    display: none;
+  }
+}
+
 .section-6 {
   background-image: url(../images/section6/banner.png);
   background-repeat: no-repeat;
@@ -2464,6 +2509,12 @@ a:hover {
 
 .section-6 .butn ion-icon {
   font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  .section-6 {
+    display: none;
+  }
 }
 
 .section-7-item-social {
@@ -2543,6 +2594,12 @@ a:hover {
 .section-7-item-social .butn ion-icon {
   color: #1565D8;
   font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  .section-7 {
+    display: none;
+  }
 }
 
 .footer {
@@ -2646,6 +2703,12 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   color: #707070;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    display: none;
+  }
 }
 
 .header .navs-butn {

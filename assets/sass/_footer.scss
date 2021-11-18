@@ -88,3 +88,9 @@
         }
     }
 }
+
+@include maxW(320px) {
+    .footer {
+        display: none;
+    }
+}
