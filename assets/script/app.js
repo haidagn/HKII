@@ -48,3 +48,10 @@ $('.butn-primary_slider').click(function () {
 //         }
 //     }
 // })
+
+// cuon trang section-6
+// const section6 = document.getElementById('section6');
+// window.addEventListener('scroll', function () {
+//     let offset = window.pageXOffset;
+//     section6.style.backgroundPositionY = offset * 0.5 + 'px';
+// })
