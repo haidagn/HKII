@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <!-- link css files -->
-    <link rel="stylesheet" href="./assets/css/app.css">
-<!--     <link rel="stylesheet" href="./assets/sass/app.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/app.css"> -->
+    <link rel="stylesheet" href="./assets/sass/app.css">
     <title>Document</title>
 </head>
 
 <body id="body-main">
+
     <header>
         <div class="header container-fluid">
             <div class="container navs">
@@ -266,12 +267,58 @@
                     </ul>
                 </div>
                 <div class="navs-butn">
-                    <a class="navs-butn-outline" href="">Đăng nhập</a>
-                    <a class="navs-butn-primary" href="">Bắt đầu</a>
+                    <a class="navs-butn-outline" href="index-login.html">Đăng nhập</a>
+                    <button data-login-target='#bodylogin' class="navs-butn-primary login-open" href="">Bắt đầu</button>
                 </div>
             </div>
         </div>
     </header>
+    <div id="bodylogin" class="body-login">
+        <div class="form-login">
+            <button data-login-close class="login-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="login-title">Sign up on Flance</div>
+            <div class="login-span">Use your openID to Sign up</div>
+            <div class="login-butn">
+                <button data-login-close data-success-target="#bodyloginsuccess" class="google">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <div>Google</div>
+                </button>
+                <button data-login-close data-success-target="#bodyloginsuccess" class="apple">
+                    <ion-icon name="logo-apple"></ion-icon>
+                    <div>Apple</div>
+                </button>
+            </div>
+            <div class="span">
+                or continue with email
+            </div>
+            <div class="login-input">
+                <input id="email" type="text" placeholder="Nhập gmail của bạn...">
+                <button id="loginbtn" disabled data-login-close data-success-target="#bodyloginsuccess">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="body-login-success" id="bodyloginsuccess">
+        <div class="form-login-success">
+            <div id="successanimation" class="success-checkmark">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                    <div class="icon-fix"></div>
+                </div>
+            </div>
+            <div class="login-success-title">Chào Hải Đăng !</div>
+            <div class="login-success-span">Bạn đã đăng nhập thành công</div>
+            <div class="login-success-butn">
+                <a class="login-success-congviec" href="index-login.html">Tìm việc mới</a>
+                <a class="login-success-home" href="index-login.html">Trang Chủ</a>
+            </div>
+        </div>
+    </div>
     <div class="hero container-fluid">
         <img class="shape-1" src="./assets/images/hero/Element.png" alt="">
         <img class="shape-2" src="./assets/images/hero/Shape.png" alt="">
@@ -823,31 +870,65 @@
     <!-- link script -->
     <script src="./assets/script/app.js"></script>
 
-    <!-- <script>
-        // bật menu
-        const openMenuBtn = document.querySelectorAll('[data-menu-target]');
-        const closeMenuBtn = document.querySelectorAll('[data-menu-close]');
-        openMenuBtn.forEach(button => {
+    <script>
+        // disabled login
+        const loginBtn = document.getElementById('loginbtn')
+        const input = document.getElementById('email')
+
+        input.addEventListener('keypress', (e) => {
+            const value = e.currentTarget.value;
+            if (value === "") {
+                loginBtn.disabled = true;
+            } else {
+                loginBtn.disabled = false;
+            }
+        })
+
+
+        // bật login
+        const openLoginBtn = document.querySelectorAll('[data-login-target]');
+        const closeLoginBtn = document.querySelectorAll('[data-login-close]');
+        const checkMark = document.getElementById('successanimation')
+
+        openLoginBtn.forEach(button => {
             button.addEventListener('click', () => {
-                const menu = document.querySelector(button.dataset.menuTarget)
-                openMenu(menu) 
+                const login = document.querySelector(button.dataset.loginTarget)
+                openLogin(login)
             })
         })
-        closeMenuBtn.forEach(button => {
+        closeLoginBtn.forEach(button => {
             button.addEventListener('click', () => {
-                const menu = button.closest('.navbar-menu')
-                closeMenu(menu)
+                const login = button.closest('.body-login')
+                closeLogin(login)
             })
         })
-        function openMenu(menu) {
-            if (menu == null) return
-            menu.classList.add('ative')
+        function openLogin(login) {
+            if (login == null) return
+            login.classList.add('login-ative')
+            checkMark.classList.add('d-none')
+            checkMark.classList.remove('d-block')
         }
-        function closeMenu(menu) {
-            if (menu == null) return
-            menu.classList.remove('ative')
+        function closeLogin(login) {
+            if (login == null) return
+            login.classList.remove('login-ative')
+            checkMark.classList.remove('d-none')
+            checkMark.classList.add('d-block')
         }
-    </script> -->
+
+        // đăng Nhập
+        const openSucBtn = document.querySelectorAll('[data-success-target]');
+
+        openSucBtn.forEach(button => {
+            button.addEventListener('click', () => {
+                const success = document.querySelector(button.dataset.successTarget)
+                openSuc(success)
+            })
+        })
+        function openSuc(success) {
+            if (success == null) return
+            success.classList.add('success-ative')
+        }
+    </script>
 </body>
 
 </html>

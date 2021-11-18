@@ -1,0 +1,122 @@
+.hero {
+    color: $primary-color;
+    position: relative;
+    background-color: #68686810;
+
+    .shape-1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 5%;
+        bottom: -30%;
+    }
+
+    .tag-blue {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-right: 65px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $secondary-color;
+    }
+
+    .space-hero {
+        height: 216px;
+        width: 100%;
+    }
+
+    img {
+        margin: 40px 0px;
+        margin-right: -80px;
+    }
+
+    .search {
+        padding: 0px 30px;
+        position: absolute;
+        top: 440px;
+        width: 800px;
+        height: 185px;
+        background-color: #fff;
+        z-index: 3;
+        border-radius: 0px 20px 20px 20px;
+
+        ul {
+            display: flex;
+            gap: 32px;
+            color: #9C9C9C;
+
+            li {
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                padding: 25px 0px;
+                padding-bottom: 20px;
+            }
+
+            .ative {
+                border-bottom: 2px solid #000;
+                color: #000;
+            }
+        }
+
+        hr {
+            background-color: #EFEFEF;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+            a {
+                padding: 18px 30px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                background-color: #226DD9;
+                border-radius: 15px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: #5A7184;
+            }
+
+            input {
+                border: none;
+                margin-top: 5px;
+                width: 200px;
+                height: 40px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+
+                &::placeholder {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: rgb(55, 55, 55);
+                }
+
+                &:focus {
+
+                    outline: none;
+                }
+            }
+        }
+    }
+}
