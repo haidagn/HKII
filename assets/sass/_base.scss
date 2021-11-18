@@ -22,16 +22,14 @@ a:hover {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1140px;
+    padding: 0;
 }
 
 
-@include maxW(320px) {
-    .container {
-        padding: 0;
-    }
+@include maxW(620px) {
     .container-fluid {
-        padding: 5px;
+        padding: 10px;
     }
     body {
         font-size: 12px;

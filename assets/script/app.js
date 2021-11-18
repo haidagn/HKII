@@ -91,6 +91,7 @@ function openSuc(success) {
 // bat tat menu mobile 
 const openNavBtn = document.querySelectorAll('[data-nav-target]');
 const closeNavBtn = document.querySelectorAll('[data-nav-close]');
+const iconOpenNav = document.getElementById('iconopennav')
 
 openNavBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -107,8 +108,10 @@ closeNavBtn.forEach(button => {
 function openNav(navs) {
     if (navs == null) return
     navs.classList.add('nav-ative')
+    iconOpenNav.classList.add('d-none')
 }
 function closeNav(navs) {
     if (navs == null) return
     navs.classList.remove('nav-ative')
+    iconOpenNav.classList.remove('d-none')
 }
