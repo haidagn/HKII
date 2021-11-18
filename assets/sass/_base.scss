@@ -26,6 +26,18 @@ a:hover {
 }
 
 
+@include maxW(320px) {
+    .container {
+        padding: 0;
+    }
+    .container-fluid {
+        padding: 5px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
 .tag-blue {
     display: inline-block;
     padding: 6px 20px;
