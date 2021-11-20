@@ -102,6 +102,7 @@ body {
   color: #183B56;
   background-color: #F9FBFE;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -187,6 +188,11 @@ a:hover {
   background-color: #fff;
   height: 80px;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
+  box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
 }
 
 .header .navs {
@@ -2233,6 +2239,7 @@ a:hover {
   color: #183B56;
   position: relative;
   background-color: #68686810;
+  margin-top: 80px;
 }
 
 .hero .shape-1 {

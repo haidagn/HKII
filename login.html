@@ -312,6 +312,7 @@
                 <div class="item">
                     <input class="email" id="email" type="email" placeholder="Nhập email ở đây...">
                     <input class="password d-none" id="password" type="password" placeholder="Nhập mật khẩu...">
+
                     <button id="btn-next" class="next" disabled>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
@@ -340,9 +341,52 @@
                         <ion-icon name="close-outline"></ion-icon>
                     </a>
                 </div>
+                <div class="item">
+                    <input class="password-sign d-none" id="password-sign" type="password"
+                        placeholder="Nhập mật khẩu...">
+                    <button id="btn-new-pass" class="newpass d-none">
+                        Tạo mật khẩu mới
+                    </button>
+                    <button id="btn-loading-new" class="loading d-none " disabled>
+                        <div class="item item4">
+                            <div class="circle circle1"></div>
+                            <div class="circle circle2"></div>
+                            <div class="circle circle3"></div>
+                            <div class="circle circle4"></div>
+                            <div class="circle circle5"></div>
+                        </div>
+                    </button>
+                    <button id="btn-new-pass-correct" class="newpasscorrect d-none">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </button>
 
+                </div>
+                <div class="item">
+                    <input class="password-sign-check d-none" id="password-sign-check" type="password"
+                        placeholder="Nhập mật khẩu...">
+                    <button id="btn-new-pass-check" class="newpasscheck d-none">
+                        Nhập lại mật khẩu
+                    </button>
+                    <button id="btn-loading-new-check" class="loading d-none" disabled>
+                        <div class="item item4">
+                            <div class="circle circle1"></div>
+                            <div class="circle circle2"></div>
+                            <div class="circle circle3"></div>
+                            <div class="circle circle4"></div>
+                            <div class="circle circle5"></div>
+                        </div>
+                    </button>
+                    <button id="btn-new-pass-check-correct" class="newpasscheckcorrect d-none">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
             <a id="forget-pass" class="forgetpass d-none" href="">Quên mật khẩu ?</a>
+            <a id="check-mail" class="checkmail d-none" href="">Kiểm tra hợp thư của bạn và nhấn vào nút xác nhận tài
+                khoản.</a>
+            <button id="create-acc" class="createacc d-none" disabled>
+                Tạo tài khoản
+            </button>
         </div>
     </div>
 

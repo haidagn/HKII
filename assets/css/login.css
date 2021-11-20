@@ -18,14 +18,6 @@ body {
     height: 100vh;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
-    box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
-}
-
 .login-form {
     width: 875px;
     height: 600px;
@@ -136,24 +128,18 @@ body {
     padding-left: 30px;
 }
 
+.login-form .outter-input .item input::-webkit-input-placeholder,
+.login-form .outter-input .item input:-ms-input-placeholder,
+.login-form .outter-input .item input::-ms-input-placeholder,
 .login-form .outter-input .item input::-webkit-input-placeholder {
     font-size: 14px;
     font-weight: 500;
     color: #cacaca;
 }
 
-.login-form .outter-input .item input:-ms-input-placeholder {
-    font-size: 14px;
-    font-weight: 500;
-    color: #cacaca;
-}
-
-.login-form .outter-input .item input::-ms-input-placeholder {
-    font-size: 14px;
-    font-weight: 500;
-    color: #cacaca;
-}
-
+.login-form .outter-input .item input::-webkit-input-placeholder,
+.login-form .outter-input .item input:-ms-input-placeholder,
+.login-form .outter-input .item input::-ms-input-placeholder,
 .login-form .outter-input .item input::placeholder {
     font-size: 14px;
     font-weight: 500;
@@ -217,6 +203,8 @@ body {
     font-size: 20px;
 }
 
+#btn-loading-new-check .item,
+#btn-loading-new .item,
 #btn-loading .item {
     display: block;
     float: left;
@@ -231,6 +219,8 @@ body {
     animation: circle2 1s linear infinite;
 }
 
+#btn-loading-new-check .item .circle,
+#btn-loading-new .item .circle,
 #btn-loading .item .circle {
     width: 100%;
     height: 100%;
@@ -240,6 +230,8 @@ body {
     border-radius: 50%;
 }
 
+#btn-loading-new-check .item .circle:before,
+#btn-loading-new .item .circle:before,
 #btn-loading .item .circle:before {
     content: '';
     width: 30%;
@@ -251,30 +243,40 @@ body {
     left: 35%;
 }
 
+#btn-loading-new-check .item .circle.circle1,
+#btn-loading-new .item .circle.circle1,
 #btn-loading .item .circle.circle1 {
     -webkit-transform: rotate(0);
     transform: rotate(0);
     opacity: 0.2;
 }
 
+#btn-loading-new-check .item .circle.circle2,
+#btn-loading-new .item .circle.circle2,
 #btn-loading .item .circle.circle2 {
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
     opacity: 0.4;
 }
 
+#btn-loading-new-check .item .circle.circle3,
+#btn-loading-new .item .circle.circle3,
 #btn-loading .item .circle.circle3 {
     -webkit-transform: rotate(80deg);
     transform: rotate(80deg);
     opacity: 0.6;
 }
 
+#btn-loading-new-check .item .circle.circle4,
+#btn-loading-new .item .circle.circle4,
 #btn-loading .item .circle.circle4 {
     -webkit-transform: rotate(120deg);
     transform: rotate(120deg);
     opacity: 0.8;
 }
 
+#btn-loading-new-check .item .circle.circle5,
+#btn-loading-new .item .circle.circle5,
 #btn-loading .item .circle.circle5 {
     -webkit-transform: rotate(160deg);
     transform: rotate(160deg);
@@ -305,6 +307,8 @@ body {
     }
 }
 
+#btn-new-pass,
+#btn-new-pass-check,
 #btn-back,
 #btn-log-in,
 #btn-sign-up,
@@ -315,6 +319,8 @@ body {
     color: #fff;
 }
 
+#btn-new-pass,
+#btn-new-pass-check,
 #btn-back {
     background-color: #618eff53;
     color: #618DFF;
@@ -340,4 +346,116 @@ body {
     width: 515px;
     text-align: end;
     padding-right: 10px;
+}
+
+#check-mail {
+    font-size: 14px;
+    font-weight: 500;
+    color: #618DFF;
+    margin-top: 10px;
+    display: block;
+}
+
+#create-acc {
+    /* margin-top: 24px; */
+    padding: 13px 20px;
+    border: none;
+    background-color: #618DFF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#create-acc:hover {
+    opacity: 0.7;
+}
+
+#create-acc:disabled {
+    background-color: #ebebeb;
+    border: 1px solid #dfdfdf;
+    cursor: no-drop;
+    color: #b4b4b4;
+}
+
+.outter-input .item:nth-child(3) {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#btn-new-pass-check-correct,
+#btn-new-pass-correct {
+    background-color: #62BA85;
+    font-size: 32px;
+    border: 1px solid #62BA85;
+}
+
+@media screen and (max-width: 420px) {
+    .login-outter .login-form {
+        padding: 0 10px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-outter .login-form h3 {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .login-outter .login-form p {
+        font-size: 13px;
+    }
+
+    .login-outter .login-form .butn {
+        gap: 20px;
+    }
+
+    .login-outter .login-form .butn-item {
+        min-width: 130px;
+        height: 50px;
+    }
+
+    .login-outter .login-form .butn-item p {
+        font-size: 16px;
+    }
+
+    .login-outter .login-form .butn-item ion-icon {
+        font-size: 22px;
+    }
+
+    .login-outter .login-form span {
+        padding: 40px 0px;
+    }
+
+    .login-outter .login-form .outter-input {
+        width: 100%;
+    }
+
+    .login-outter .login-form .outter-input .item input {
+        width: 100%;
+    }
+
+    .login-outter .login-form .outter-input .item button,
+    .login-outter .login-form .outter-input .item a {
+        font-size: 13px;
+    }
+
+    .login-outter .login-form .outter-input .item #btn-new-pass,
+    .login-outter .login-form .outter-input .item #btn-new-pass-check,
+    .login-outter .login-form .outter-input .item #btn-back,
+    .login-outter .login-form .outter-input .item #btn-log-in,
+    .login-outter .login-form .outter-input .item #btn-sign-up,
+    .login-outter .login-form .outter-input .item #btn-input-pass {
+        font-size: 10px;
+        width: 110px;
+    }
+
+    .login-outter .login-form #forget-pass {
+        width: 100%;
+        margin-top: 0;
+        font-size: 12px;
+    }
 }

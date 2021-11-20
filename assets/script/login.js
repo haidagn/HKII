@@ -96,3 +96,67 @@ function unCorrectPassword() {
 function disabledPass() {
     password.disabled = false;
 }
+
+// ================ đã có tài khoản ===================
+const passwordSignup = document.getElementById('password-sign')
+const passwordSignupCheck = document.getElementById('password-sign-check')
+const newPassBtn = document.getElementById('btn-new-pass')
+const newPassBtnCorrect = document.getElementById('btn-new-pass-correct')
+const newPassBtnCheck = document.getElementById('btn-new-pass-check')
+const newPassBtnCheckCorrect = document.getElementById('btn-new-pass-check-correct')
+const checkMailText = document.getElementById('check-mail')
+const createAccBtn = document.getElementById('create-acc')
+const loadingBtnNew = document.getElementById('btn-loading-new')
+const loadingBtnNewCheck = document.getElementById('btn-loading-new-check')
+
+SignUpBtn.addEventListener('click', (e) => {
+    passwordSignup.classList.remove('d-none')
+    newPassBtn.classList.remove('d-none')
+    newPassBtn.disabled = true;
+    input.classList.add('d-none');
+    SignUpBtn.classList.add('d-none');
+})
+
+passwordSignup.addEventListener('keyup', (e) => {
+    const passSignup = e.currentTarget.value;
+    let passsignup = String(passSignup);
+
+    if (passsignup === 'admin123') {
+        passwordSignupCheck.classList.remove('d-none')
+        newPassBtnCheck.classList.remove('d-none')
+    } else {
+        passwordSignupCheck.classList.add('d-none')
+        newPassBtnCheck.classList.add('d-none')
+    }
+})
+passwordSignupCheck.addEventListener('keyup', (e) => {
+    const passSignupCheck = e.currentTarget.value;
+    let passsignupcheck = String(passSignupCheck);
+
+    if (passsignupcheck === 'admin123') {
+        console.log('hop le')
+        createAccBtn.classList.remove('d-none')
+        createAccBtn.disabled = true;
+        newPassBtn.classList.add('d-none')
+        newPassBtnCheck.classList.add('d-none')
+        loadingBtnNew.classList.remove('d-none')
+        loadingBtnNewCheck.classList.remove('d-none')
+        setTimeout(passwordCorrect, 1000)
+    } else {
+        createAccBtn.classList.add('d-none')
+    }
+})
+
+function passwordCorrect() {
+    newPassBtnCorrect.classList.remove('d-none')
+    newPassBtnCheckCorrect.classList.remove('d-none')
+    loadingBtnNew.classList.add('d-none')
+    loadingBtnNewCheck.classList.add('d-none')
+    createAccBtn.disabled = false;
+}
+
+createAccBtn.addEventListener('click', (e) => {
+    createAccBtn.setAttribute("style", "background-color: #a2d7ff;")
+    setTimeout(correctPassword, 1000)
+})
+
