@@ -105,6 +105,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.scroll-down .header {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 0.8;
+}
+
 li {
   list-style: none;
 }
@@ -118,6 +124,11 @@ hr {
 a:hover {
   text-decoration: none;
   color: #4A5CFF;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
 }
 
 .container {
@@ -193,6 +204,10 @@ a:hover {
   left: 0;
   -webkit-box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
   box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .header .navs {

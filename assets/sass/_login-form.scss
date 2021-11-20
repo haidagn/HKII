@@ -340,11 +340,18 @@ body {
 }
 
 #check-mail {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
-    color: #618DFF;
+    color: #4f4f4f;
     margin-top: 10px;
     display: block;
+}
+
+#icon-send-mail ion-icon {
+    color: #62BA85;
+    font-size: 82px;
+    margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 #create-acc {
@@ -388,6 +395,7 @@ body {
             padding: 0 10px;
             width: 100vw;
             height: 100vh;
+
             h3 {
                 font-size: 30px;
                 text-align: center;
@@ -405,7 +413,8 @@ body {
                     min-width: 100px;
                     height: 40px;
                     gap: 10px;
-                    border-radius:12px;
+                    border-radius: 12px;
+
                     p {
                         font-size: 14px;
                         line-height: 50px;
@@ -440,6 +449,7 @@ body {
                         top: 4px;
                         right: 4px;
                         border-radius: 8px;
+
                         ion-icon {
                             font-size: 16px;
                         }
@@ -463,12 +473,21 @@ body {
                 font-size: 12px;
             }
 
+            #check-mail {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            #icon-send-mail {
+                font-size: 46px;
+            }
+
             #create-acc {
                 width: 130px;
                 height: 40px;
                 line-height: 40px;
                 font-size: 14px;
-                text-align:center;
+                text-align: center;
                 padding: 0px;
                 border-radius: 10px;
             }

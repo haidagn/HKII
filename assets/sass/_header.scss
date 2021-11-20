@@ -9,7 +9,7 @@
     left: 0;
     -webkit-box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
     box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
-
+    transition: transform 0.5s ease-in-out;
     .navs {
         display: flex;
         align-items: center;

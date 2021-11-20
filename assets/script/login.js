@@ -1,4 +1,3 @@
-
 // test @ 
 const SignUpBtn = document.getElementById('btn-sign-up')
 const inputPassBtn = document.getElementById('btn-input-pass')
@@ -147,6 +146,8 @@ passwordSignupCheck.addEventListener('keyup', (e) => {
     }
 })
 
+
+
 function passwordCorrect() {
     newPassBtnCorrect.classList.remove('d-none')
     newPassBtnCheckCorrect.classList.remove('d-none')
@@ -155,8 +156,21 @@ function passwordCorrect() {
     createAccBtn.disabled = false;
 }
 
+const iconSendMail = document.getElementById('icon-send-mail')
+const titleRoll = document.getElementById('title-roll')
+
 createAccBtn.addEventListener('click', (e) => {
     createAccBtn.setAttribute("style", "background-color: #a2d7ff;")
-    setTimeout(correctPassword, 1000)
+    setTimeout(sendMail, 2000)
+    setTimeout(correctPassword, 10000)
 })
-
+function sendMail() {
+    newPassBtnCorrect.classList.add('d-none')
+    newPassBtnCheckCorrect.classList.add('d-none')
+    createAccBtn.classList.add('d-none')
+    passwordSignup.classList.add('d-none')
+    passwordSignupCheck.classList.add('d-none')
+    titleRoll.classList.add('d-none')
+    iconSendMail.classList.remove('d-none')
+    checkMailText.classList.remove('d-none')
+}
