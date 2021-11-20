@@ -29,63 +29,64 @@ $('.butn-primary_slider').click(function () {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
-// disabled login
-const loginBtn = document.getElementById('loginbtn')
-const input = document.getElementById('email')
 
-input.addEventListener('keypress', (e) => {
-    const value = e.currentTarget.value;
-    if (value === "") {
-        loginBtn.disabled = true;
-    } else {
-        loginBtn.disabled = false;
-    }
-})
+// // disabled login
+// const loginBtn = document.getElementById('loginbtn')
+// const input = document.getElementById('email')
+
+// input.addEventListener('keypress', (e) => {
+//     const value = e.currentTarget.value;
+//     if (value === "") {
+//         loginBtn.disabled = true;
+//     } else {
+//         loginBtn.disabled = false;
+//     }
+// })
 
 
-// bật login
-const openLoginBtn = document.querySelectorAll('[data-login-target]');
-const closeLoginBtn = document.querySelectorAll('[data-login-close]');
-const checkMark = document.getElementById('successanimation')
+// // bật login
+// const openLoginBtn = document.querySelectorAll('[data-login-target]');
+// const closeLoginBtn = document.querySelectorAll('[data-login-close]');
+// const checkMark = document.getElementById('successanimation')
 
-openLoginBtn.forEach(button => {
-    button.addEventListener('click', () => {
-        const login = document.querySelector(button.dataset.loginTarget)
-        openLogin(login)
-    })
-})
-closeLoginBtn.forEach(button => {
-    button.addEventListener('click', () => {
-        const login = button.closest('.body-login')
-        closeLogin(login)
-    })
-})
-function openLogin(login) {
-    if (login == null) return
-    login.classList.add('login-ative')
-    checkMark.classList.add('d-none')
-    checkMark.classList.remove('d-block')
-}
-function closeLogin(login) {
-    if (login == null) return
-    login.classList.remove('login-ative')
-    checkMark.classList.remove('d-none')
-    checkMark.classList.add('d-block')
-}
+// openLoginBtn.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const login = document.querySelector(button.dataset.loginTarget)
+//         openLogin(login)
+//     })
+// })
+// closeLoginBtn.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const login = button.closest('.body-login')
+//         closeLogin(login)
+//     })
+// })
+// function openLogin(login) {
+//     if (login == null) return
+//     login.classList.add('login-ative')
+//     checkMark.classList.add('d-none')
+//     checkMark.classList.remove('d-block')
+// }
+// function closeLogin(login) {
+//     if (login == null) return
+//     login.classList.remove('login-ative')
+//     checkMark.classList.remove('d-none')
+//     checkMark.classList.add('d-block')
+// }
 
-// đăng Nhập
-const openSucBtn = document.querySelectorAll('[data-success-target]');
+// // đăng Nhập
+// const openSucBtn = document.querySelectorAll('[data-success-target]');
 
-openSucBtn.forEach(button => {
-    button.addEventListener('click', () => {
-        const success = document.querySelector(button.dataset.successTarget)
-        openSuc(success)
-    })
-})
-function openSuc(success) {
-    if (success == null) return
-    success.classList.add('success-ative')
-}
+// openSucBtn.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const success = document.querySelector(button.dataset.successTarget)
+//         openSuc(success)
+//     })
+// })
+// function openSuc(success) {
+//     if (success == null) return
+//     success.classList.add('success-ative')
+// }
 
 
 // bat tat menu mobile 
@@ -108,10 +109,10 @@ closeNavBtn.forEach(button => {
 function openNav(navs) {
     if (navs == null) return
     navs.classList.add('nav-ative')
-    iconOpenNav.classList.add('d-none')
+    // iconOpenNav.classList.add('d-none')
 }
 function closeNav(navs) {
     if (navs == null) return
     navs.classList.remove('nav-ative')
-    iconOpenNav.classList.remove('d-none')
+    // iconOpenNav.classList.remove('d-none')
 }

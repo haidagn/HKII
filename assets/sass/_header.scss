@@ -1191,7 +1191,7 @@
         .navs {
             &-logo {
                 img {
-                    width: 120px;
+                    width: 100px;
                 }
             }
 
@@ -1276,7 +1276,11 @@
                 }
 
                 a.navs-butn-primary {
-                    display: none;
+                    display: block;
+                    // width: 115px;
+                    padding: 8px 18px;
+                    color: #1565D8;
+                    background-color: #1566d81e;
                 }
 
                 &-outline {
@@ -1296,9 +1300,9 @@
                     background: none;
                     border: none;
                     display: block;
-
-                    ion-icon {
-                        font-size: 32px;
+                    margin-left: 18px;
+                    .icon-humber {
+                        width: 18px;
                     }
                 }
             }

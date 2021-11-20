@@ -1512,7 +1512,7 @@ a:hover {
     height: 60px;
   }
   .header .navs-logo img {
-    width: 120px;
+    width: 100px;
   }
   .header .navs-links {
     display: -webkit-box;
@@ -1600,7 +1600,10 @@ a:hover {
     display: none;
   }
   .header .navs-butn a.navs-butn-primary {
-    display: none;
+    display: block;
+    padding: 8px 18px;
+    color: #1565D8;
+    background-color: #1566d81e;
   }
   .header .navs-butn-outline {
     font-size: 12px;
@@ -1617,9 +1620,10 @@ a:hover {
     background: none;
     border: none;
     display: block;
+    margin-left: 18px;
   }
-  .header .navs-butn .icon-open-nav ion-icon {
-    font-size: 32px;
+  .header .navs-butn .icon-open-nav .icon-humber {
+    width: 18px;
   }
 }
 
