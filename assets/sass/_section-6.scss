@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 600px;
+    height: 550px;
     display: flex;
     align-items: center;
 
@@ -26,18 +26,22 @@
     }
 
     .butn {
-        padding: 20px 40px;
+        padding: 15px 30px;
         display: inline-flex;
         align-items: center;
         background-color: #FFFFFF;
         border-radius: 8px;
-
+        cursor: pointer;
+        transition: all 0.5s ease;
         a {
             color: $primary-color;
             font-size: 18px;
             font-weight: 700;
+            padding-right: 10px;
         }
-
+        &:hover {
+            opacity: 0.7;
+        }
         ion-icon {
             font-size: 18px;
         }

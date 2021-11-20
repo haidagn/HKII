@@ -27,7 +27,7 @@
                 .background-menu {
                     position: absolute;
                     top: 80px;
-                    left: 15px;
+                    left: 0px;
                     width: 1140px;
                     height: 390px;
                     padding: 20px 0px;
@@ -109,7 +109,7 @@
             &-dropdown-1 {
                 position: absolute;
                 top: 80px;
-                left: 15px;
+                left: 0px;
                 z-index: 6;
                 width: 1140px;
                 padding: 20px 0px;
@@ -245,7 +245,7 @@
             &-dropdown-2 {
                 position: absolute;
                 top: 82px;
-                left: 15px;
+                left: 0px;
                 z-index: 6;
                 width: 1140px;
                 padding: 20px 0px;
@@ -296,15 +296,26 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 5px;
-                            background-color: #5a718419;
+                            background: #5a718419;
                             margin-right: 6px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
 
                             ion-icon {
+                                transition: all 0.2s ease;
                                 color: #5A7184;
                                 font-size: 20px;
+                            }
+
+                            transition: background 0.6s ease;
+
+                            &:hover {
+                                background-color: #1d53a0aa;
+
+                                ion-icon {
+                                    color: #fff;
+                                }
                             }
                         }
                     }
@@ -380,6 +391,21 @@
                     margin-left: 75px;
                     position: relative;
                     margin-right: 0px;
+                    background-color: #0e52b1;
+                    border-radius: 20px;
+                    overflow: hidden;
+
+                    &:hover img {
+                        transform: scale(1.3);
+                    }
+
+                    img {
+                        transition: all 0.5s ease;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
 
                     &-content {
                         position: absolute;
@@ -392,9 +418,11 @@
                             color: #fff;
                             padding-top: 65px;
                             padding-bottom: 20px;
+                            pointer-events: none;
                         }
 
                         .span {
+                            pointer-events: none;
                             font-size: 12px;
                             font-weight: 400;
                             color: #d6d6d6;
@@ -403,6 +431,7 @@
                         }
 
                         .tag {
+                            pointer-events: none;
                             display: inline-block;
                             padding: 5px 15px;
                             background-color: #fff;
@@ -432,7 +461,7 @@
             &-dropdown-3 {
                 position: absolute;
                 top: 82px;
-                left: 15px;
+                left: 0px;
                 z-index: 6;
                 width: 1140px;
                 padding: 20px 0px;
@@ -621,7 +650,7 @@
             &-dropdown-4 {
                 position: absolute;
                 top: 82px;
-                left: 15px;
+                left: 0px;
                 z-index: 6;
                 width: 1140px;
                 height: 330px;
@@ -672,6 +701,7 @@
                         gap: 8px;
                         margin-top: 15px;
 
+
                         &:hover {
                             opacity: 0.7;
                         }
@@ -696,13 +726,23 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 5px;
-                            background-color: #5a718419;
+                            background: #5a718419;
                             margin-right: 6px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            transition: background 0.6s ease;
+
+                            &:hover {
+                                background-color: #1d53a0aa;
+
+                                ion-icon {
+                                    color: #fff;
+                                }
+                            }
 
                             ion-icon {
+                                transition: all 0.2 ease;
                                 color: #5A7184;
                                 font-size: 20px;
                             }
@@ -795,6 +835,12 @@
                         display: flex;
                         align-items: center;
 
+                        &:hover {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+
                         &-banner {
                             min-width: 240px;
                             height: 115px;
@@ -802,9 +848,11 @@
                             overflow: hidden;
 
                             img {
+                                transition: all 0.4s ease;
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
+                                transform: scale(1);
                             }
                         }
 
@@ -854,7 +902,7 @@
                 display: none;
             }
 
-            a.navs-butn-primary {
+            button.navs-butn-primary {
                 display: none;
             }
 
