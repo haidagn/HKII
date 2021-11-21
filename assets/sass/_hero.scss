@@ -57,14 +57,18 @@
         ul {
             display: flex;
             gap: 32px;
-            color: #9C9C9C;
 
             li {
-                font-size: 12px;
+                color: #9C9C9C;
+                font-size: 14px;
                 font-weight: 600;
+                letter-spacing: 0.5px;
                 cursor: pointer;
                 padding: 25px 0px;
                 padding-bottom: 20px;
+                transition: all 0.3s ease;
+                border-bottom: 2px solid rgba(255, 255, 255, 0);
+                user-select: none;
             }
 
             .ative {
@@ -85,17 +89,24 @@
 
             a {
                 padding: 18px 30px;
-                font-size: 20px;
-                font-weight: 700;
-                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffffff;
                 background-color: #226DD9;
                 border-radius: 15px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
 
             p {
                 font-size: 16px;
                 font-weight: 500;
                 color: #5A7184;
+                pointer-events: none;
+                user-select: none;
             }
 
             input {
@@ -106,15 +117,15 @@
                 font-size: 24px;
                 font-weight: 600;
                 color: #000;
+                cursor: text;
 
                 &::placeholder {
                     font-size: 24px;
                     font-weight: 600;
-                    color: rgb(55, 55, 55);
+                    color: rgba(0, 0, 0, 0.349)
                 }
 
                 &:focus {
-
                     outline: none;
                 }
             }
@@ -124,11 +135,9 @@
 
 @include maxW(620px) {
     .d-mobile {
-        display: block;
+        display: block !important;
     }
-    .hero {
-        display: none;
-    }
+
 }
 
 @include maxW(430px) {
@@ -138,9 +147,11 @@
         background-color: transparent;
         margin-top: 0;
         padding-top: 100px;
+
         .space-hero {
             display: none;
         }
+
         &-butn {
             width: 100%;
             padding: 15px 0px;

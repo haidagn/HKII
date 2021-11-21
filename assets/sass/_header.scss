@@ -930,11 +930,12 @@
             }
         }
 
-        .d-mobile {
-            display: none !important;
-        }
 
     }
+}
+
+.d-mobile {
+    display: none !important;
 }
 
 @include maxW(770px) {
@@ -1079,6 +1080,7 @@
 
         .navs {
             &-logo {
+                display: none;
                 img {
                     width: 100px;
                 }
@@ -1208,6 +1210,7 @@
                 img {
                     width: 100px;
                 }
+
             }
 
             &-links {

@@ -1,5 +1,5 @@
 // slider-section2
-$('.section-2 .owl-carousel').owlCarousel({
+$('#slider-project').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -12,7 +12,7 @@ $('.section-2 .owl-carousel').owlCarousel({
             items: 3
         },
         1000: {
-            items: 3
+            items: 1
         }
     }
 })
@@ -29,6 +29,25 @@ $('.butn-primary_slider').click(function () {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
+
+$("#slider-comment").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
 
 
 // bat tat menu mobile 
@@ -86,4 +105,9 @@ window.addEventListener('scroll', () => {
         navBars.setAttribute("style", "")
     }
     lastScroll = currentScroll
+})
+
+// active search 
+$(document).on('click', '#hero .search ul li', function () {
+    $(this).addClass('ative').siblings().removeClass('ative')
 })
