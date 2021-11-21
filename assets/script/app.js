@@ -64,21 +64,26 @@ function closeNav(navs) {
 // navgation scroll
 
 const body = document.body
+const navBars = document.getElementById('navsbar')
+
 let lastScroll = 0
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset
 
-    if (currentScroll <= 0) {
-        body.classList.add('scroll-up')
+    if (currentScroll <= 300) {
+        body.classList.add('tranparent-scroll-up')
+        navBars.setAttribute("style", "background-color: transparent; box - shadow: none;")
     }
     if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
         body.classList.remove('scroll-up')
         body.classList.add('scroll-down')
+        navBars.setAttribute("style", "")
     }
     if (currentScroll < lastScroll && body.classList.contains('scroll-down')) {
         body.classList.remove('scroll-down')
         body.classList.add('scroll-up')
+        navBars.setAttribute("style", "")
     }
     lastScroll = currentScroll
 })

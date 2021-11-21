@@ -42,6 +42,7 @@ input::-ms-clear {
     .container-fluid {
         padding: 10px;
     }
+
     body {
         font-size: 12px;
     }
@@ -91,17 +92,31 @@ input::-ms-clear {
     color: $secondary-color;
     padding-bottom: 45px;
 }
+
 @include maxW(430px) {
+    .scroll-down .header {
+        transform: translate3d(0, -100%, 0);
+        opacity: 0.8;
+    }
+
+    .scroll-up .header {
+        background-color: #ffffff;
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.07));
+    }
+
     .container {
         max-width: 365px;
     }
+
     .tag-blue {
         padding: 5px 10px;
         font-size: 11px;
     }
+
     .space-100px {
         height: 90px;
     }
+
     .span-section {
         padding-right: 50px;
     }

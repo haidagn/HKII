@@ -148,3 +148,17 @@
         }
     }
 }
+@include maxW(400px) {
+    .section-4 {
+        &-table-thongke {
+            height: 400px;
+            &_check {
+                grid-gap: 27px;
+                grid-template-columns: 1fr 1fr;
+                #rp-mobile {
+                    display: none;
+                    }
+                }
+        }
+    }
+}
