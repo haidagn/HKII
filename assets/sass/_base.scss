@@ -42,11 +42,11 @@ input::-ms-clear {
     .container-fluid {
         padding: 10px;
     }
-
     body {
         font-size: 12px;
     }
 }
+
 
 .tag-blue {
     display: inline-block;
@@ -90,4 +90,19 @@ input::-ms-clear {
     font-weight: 400;
     color: $secondary-color;
     padding-bottom: 45px;
+}
+@include maxW(430px) {
+    .container {
+        max-width: 365px;
+    }
+    .tag-blue {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    .space-100px {
+        height: 90px;
+    }
+    .span-section {
+        padding-right: 50px;
+    }
 }

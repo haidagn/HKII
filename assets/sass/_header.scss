@@ -10,6 +10,7 @@
     -webkit-box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
     box-shadow: 0 0 10px rgba(52, 52, 52, 0.0701);
     transition: transform 0.5s ease-in-out;
+
     .navs {
         display: flex;
         align-items: center;
@@ -929,16 +930,25 @@
             }
         }
 
+        .d-mobile {
+            display: none !important;
+        }
 
     }
 }
 
 @include maxW(770px) {
+    .d-mobile {
+        display: block;
+    }
+
     .header {
         height: 80px;
         position: fixed;
         top: 0;
         left: 0;
+        background-color: transparent;
+        box-shadow: none;
 
         .navs {
             &-logo {
@@ -1056,6 +1066,7 @@
                 }
             }
         }
+
     }
 }
 
@@ -1065,6 +1076,7 @@
         position: fixed;
         top: 0;
         left: 0;
+
         .navs {
             &-logo {
                 img {

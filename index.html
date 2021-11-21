@@ -34,6 +34,7 @@
         <div class="header container-fluid">
             <div class="container navs">
                 <div class="navs-logo"><a href=""><img src="./assets/images/Logo.svg" alt=""></a></div>
+                <div class="navs-logo d-mobile"><a href=""><img src="./assets/images/Logo-mobile.svg" alt=""></a></div>
                 <div id="navlinks" class="navs-links">
                     <button data-nav-close class="icon-close-nav">
                         <ion-icon name="close-outline"></ion-icon>
@@ -301,61 +302,18 @@
             </div>
         </div>
     </header>
-    <div id="bodylogin" class="body-login">
-        <div class="form-login">
-            <button data-login-close class="login-close">
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="login-title">Sign up on Flance</div>
-            <div class="login-span">Use your openID to Sign up</div>
-            <div class="login-butn">
-                <button data-login-close data-success-target="#bodyloginsuccess" class="google">
-                    <ion-icon name="logo-google"></ion-icon>
-                    <div>Google</div>
-                </button>
-                <button data-login-close data-success-target="#bodyloginsuccess" class="apple">
-                    <ion-icon name="logo-apple"></ion-icon>
-                    <div>Apple</div>
-                </button>
-            </div>
-            <div class="span">
-                or continue with email
-            </div>
-            <div class="login-input">
-                <input id="email" type="text" placeholder="Nhập gmail của bạn...">
-                <button id="loginbtn" disabled data-login-close data-success-target="#bodyloginsuccess">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="body-login-success" id="bodyloginsuccess">
-        <div class="form-login-success">
-            <div id="successanimation" class="success-checkmark">
-                <div class="check-icon">
-                    <span class="icon-line line-tip"></span>
-                    <span class="icon-line line-long"></span>
-                    <div class="icon-circle"></div>
-                    <div class="icon-fix"></div>
-                </div>
-            </div>
-            <div class="login-success-title">Chào Hải Đăng !</div>
-            <div class="login-success-span">Bạn đã đăng nhập thành công</div>
-            <div class="login-success-butn">
-                <a class="login-success-congviec" href="index-login.html">Tìm việc mới</a>
-                <a class="login-success-home" href="index-login.html">Trang Chủ</a>
-            </div>
-        </div>
-    </div>
+
     <div class="hero container-fluid">
         <img class="shape-1" src="./assets/images/hero/Element.png" alt="">
         <img class="shape-2" src="./assets/images/hero/Shape.png" alt="">
+        <img class="hero-img-mobile d-mobile" src="./assets/images/hero/Oval.png" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <div class="tag-blue "># SẴN SÀNG CHO CÔNG VIỆC MỚI</div>
                     <h1>Tìm việc làm phù hợp với cuộc sống của bạn</h1>
                     <p>Hầu hết các công việc đều được Flance tin tưởng và chứng nhận.</p>
+                    <a class="d-mobile hero-butn" href="#">Tham gia ngay với chúng tôi</a>
                     <div class="space-hero"></div>
                     <div class="search">
                         <ul>
@@ -654,7 +612,7 @@
                                     <ion-icon name="checkmark-outline"></ion-icon>
                                 </div>
                                 <div class="content">
-                                    <div class="title">120</div>
+                                    <div class="title">120+</div>
                                     <div class="span">Chuyên gia</div>
                                 </div>
                             </div>

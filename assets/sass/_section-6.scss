@@ -26,7 +26,7 @@
     }
 
     .butn {
-        padding: 15px 30px;
+        padding: 15px 40px;
         display: inline-flex;
         align-items: center;
         background-color: #FFFFFF;
@@ -50,6 +50,12 @@
 
 @include maxW(520px) {
     .section-6 {
-        display: none;
+        display: flex;
+        h2 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 14px;
+        }
     }
 }

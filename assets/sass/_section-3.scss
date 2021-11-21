@@ -15,6 +15,7 @@
             border-radius: 20px;
             padding: 0px 30px;
             cursor: pointer;
+
             .number {
                 font-size: 64px;
                 font-weight: 700;
@@ -42,8 +43,16 @@
     }
 }
 
-@include maxW(520px) {
+@include maxW(430px) {
     .section-3 {
-        display: none;
+        display: block;
+
+        &-post {
+            grid-template-columns: 1fr;
+
+            .item {
+                box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.11);
+            }
+        }
     }
 }

@@ -63,6 +63,20 @@
 
 @include maxW(520px) {
     .section-7 {
-        display: none;
+        display: block;
+        .title-section {
+            text-align: center;
+        }
+        .section-7-item-social {
+            p {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            p:nth-child(2),
+            p:first-child {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
     }
 }

@@ -106,8 +106,13 @@
     }
 }
 
-@include maxW(520px) {
+@include maxW(430px) {
     .section-5 {
         display: none;
+        &-slider {
+            flex-direction: column;
+            .item {
+            }
+        }
     }
 }

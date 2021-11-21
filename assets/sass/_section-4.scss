@@ -96,8 +96,55 @@
     }
 }
 
-@include maxW(520px) {
+@include maxW(430px) {
     .section-4 {
-        display: none;
+        display: block;
+
+        &-left {
+            padding-right: 30px;
+            margin-bottom: 50px;
+
+            .span-section {
+                padding-right: 25px;
+            }
+            &-check .check {
+                min-width: 24px;
+                min-height: 24px;
+            }
+        }
+
+        &-table-thongke {
+            width: 100%;
+            padding: 25px 20px;
+
+            .title-section {
+                font-size: 26px;
+            }
+
+            .span-section {
+                padding-right: 20px;
+            }
+
+            &_check {
+                grid-gap: 27px;
+                .item {
+                    .content {
+                        .title {
+                            font-size: 24px;
+                        }
+
+                        .span {
+                            font-size: 11px;
+                        }
+                    }
+                    .check {
+                        margin-top: 5px;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 9px;
+                    }
+                }
+            }
+        }
     }
 }

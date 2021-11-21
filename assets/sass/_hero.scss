@@ -3,6 +3,7 @@
     position: relative;
     background-color: #68686810;
     margin-top: 80px;
+
     .shape-1 {
         position: absolute;
         top: 10%;
@@ -122,7 +123,66 @@
 }
 
 @include maxW(620px) {
+    .d-mobile {
+        display: block;
+    }
     .hero {
         display: none;
+    }
+}
+
+@include maxW(430px) {
+
+    .hero {
+        display: block;
+        background-color: transparent;
+        margin-top: 0;
+        padding-top: 100px;
+        .space-hero {
+            display: none;
+        }
+        &-butn {
+            width: 100%;
+            padding: 15px 0px;
+            text-align: center;
+            background-color: #104874;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 15px;
+        }
+
+        .search {
+            display: none;
+        }
+
+        img {
+            display: none;
+            margin: 0;
+        }
+
+        .hero-img-mobile {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .tag-blue {
+            width: 215px;
+        }
+
+        h1 {
+            font-size: 36px;
+            padding-right: 30px;
+            line-height: 46px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 13px;
+            padding-right: 50px;
+            padding-bottom: 25px;
+        }
     }
 }

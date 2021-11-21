@@ -121,8 +121,26 @@
 }
 
 
-@include maxW(520px) {
+@include maxW(430px) {
     .section-2 {
-        display: none;
+        display: block;
+        .butn-slide {
+            display: none;
+        }
+        &-slider {
+            .owl-dots.disabled {
+                display: block;
+            }
+            &-item {
+                max-width:100%;
+                .banner {
+                    width: 100%;
+                    height: 330px;
+                }
+                .title {
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
