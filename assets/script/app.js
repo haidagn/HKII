@@ -9,24 +9,20 @@ $('#slider-project').owlCarousel({
             items: 1
         },
         600: {
-            items: 3
+            items: 1
         },
         1000: {
-            items: 1
+            items: 3
         }
     }
 })
 
 var owl = $('.section-2 .owl-carousel');
 owl.owlCarousel();
-// Go to the next item
 $('.butn-outline_slider').click(function () {
     owl.trigger('next.owl.carousel');
 })
-// Go to the previous item
 $('.butn-primary_slider').click(function () {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
 
@@ -90,10 +86,14 @@ let lastScroll = 0
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset
 
-    if (currentScroll <= 300) {
-        body.classList.add('tranparent-scroll-up')
+    if (currentScroll <= 80) {
         navBars.setAttribute("style", "background-color: transparent; box - shadow: none;")
     }
+
+    // if (currentScroll <= 300) {
+    //     body.classList.add('tranparent-scroll-up')
+    //     navBars.setAttribute("style", "@media screen and (max-width:1024px) #navsbar{background-color: transparent; box-shadow: none;}")
+    // }
     if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
         body.classList.remove('scroll-up')
         body.classList.add('scroll-down')

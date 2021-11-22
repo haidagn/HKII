@@ -89,8 +89,55 @@
     }
 }
 
-@include maxW(520px) {
+@include maxW(430px) {
     .footer {
-        display: none;
+        display: block;
+        .space-100px {
+            height: 40px;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 150px;
+                margin: 0 auto;
+            }
+            .butn {
+                justify-content: center;
+                
+            }
+            .span {
+                margin-top: 20px;
+                padding: 0 20px;
+                text-align: center;
+            }
+        }
+        .right {
+            padding-top: 50px;
+            .item {
+                .span {
+                    display: none !important;
+                }
+                .title {
+                    font-size: 14px;
+                }
+            }
+        }
+        hr {
+            margin-top: 10px;
+        }
+        .bottom {
+            padding: 10px 0px;
+            .copyright {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+            .dieukhoan {
+                justify-content: center;
+            }
+        }
     }
 }
