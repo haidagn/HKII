@@ -4098,9 +4098,10 @@ input::-ms-clear {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 5px;
   }
   .profile-main .fullname p {
-    font-size: 34px;
+    font-size: 20px;
   }
   .profile-main .fullname ion-icon {
     font-size: 24px;
