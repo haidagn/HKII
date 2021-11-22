@@ -147,7 +147,9 @@
         background-color: transparent;
         margin-top: 0;
         padding-top: 100px;
-
+        &-content {
+            padding: 10px;
+        }
         .space-hero {
             display: none;
         }

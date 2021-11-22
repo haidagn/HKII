@@ -103,6 +103,7 @@ body {
   background-color: #F9FBFE;
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 .scroll-down .header {
@@ -137,8 +138,8 @@ input::-ms-clear {
 }
 
 @media screen and (max-width: 620px) {
-  .container-fluid {
-    padding: 10px;
+  .container {
+    padding: 0px 10px;
   }
   body {
     font-size: 12px;
@@ -203,6 +204,7 @@ input::-ms-clear {
   }
   .container {
     max-width: 365px;
+    padding: 0;
   }
   .tag-blue {
     padding: 5px 10px;
@@ -213,6 +215,12 @@ input::-ms-clear {
   }
   .span-section {
     padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 20px;
   }
 }
 
@@ -2479,6 +2487,9 @@ input::-ms-clear {
     margin-top: 0;
     padding-top: 100px;
   }
+  .hero-content {
+    padding: 10px;
+  }
   .hero .space-hero {
     display: none;
   }
@@ -3581,9 +3592,11 @@ input::-ms-clear {
   }
   .footer .bottom .copyright {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     padding-bottom: 10px;
+    padding-top: 10px;
+    color: #70707079;
   }
   .footer .bottom .dieukhoan {
     -webkit-box-pack: center;
@@ -4783,5 +4796,82 @@ input::-ms-clear {
 
 .exam-main .red-item .content {
   background: #D838141e;
+}
+
+@media screen and (max-width: 430px) {
+  .hero-post {
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 365px;
+  }
+  .hero-post h1 {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-post .hero-span {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-post .search {
+    display: none;
+  }
+  .post {
+    padding: 0;
+  }
+  .post .space-100px {
+    height: 20px;
+  }
+  .post-main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .post .title-section {
+    font-size: 36px;
+  }
+  .exam {
+    padding: 0;
+  }
+  .exam .title-section {
+    font-size: 36px;
+  }
+  .exam .span-section {
+    font-size: 14px;
+  }
+  .exam-main .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exam-main .item .banner {
+    min-width: unset;
+    height: 260px;
+    padding: 20px;
+  }
+  .exam-main .item .banner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+  .exam-main .item .content {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+  .exam-main .item .content .title {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+  .exam-main .item .content .local {
+    font-size: 12px;
+  }
+  .exam-main .item .content .butn {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=app.css.map */
