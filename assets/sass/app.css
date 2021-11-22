@@ -4065,6 +4065,12 @@ input::-ms-clear {
   margin-top: 8px;
 }
 
+@media screen and (max-width: 520px) {
+  .profile-wrapper {
+    padding: 0 10px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .avt-background {
     margin-top: 60px;
@@ -4079,7 +4085,7 @@ input::-ms-clear {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 365px;
+    max-width: 385px;
     margin-top: -100px;
   }
   .profile-tag {

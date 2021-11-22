@@ -331,6 +331,12 @@
     }
 }
 
+@include maxW(520px) {
+    .profile-wrapper {
+        padding: 0 10px;
+    }
+}
+
 @include maxW(430px) {
     .avt-background {
         margin-top: 60px;
@@ -342,7 +348,7 @@
         &-wrapper {
             display: flex;
             flex-direction: column;
-            max-width: 365px;
+            max-width: 385px;
             margin-top: -100px;
         }
 
@@ -416,12 +422,15 @@
             .profile-image::-webkit-scrollbar {
                 display: none;
             }
+
             a.butn-image {
+
                 ion-icon,
                 p {
                     font-size: 14px;
                 }
             }
+
             .butn-mobile {
                 display: flex;
                 justify-content: space-between;
@@ -459,6 +468,7 @@
                     ion-icon {
                         color: rgb(18, 18, 18);
                     }
+
                     ul {
                         position: absolute;
                         top: 115%;
@@ -472,6 +482,7 @@
                         visibility: hidden;
                         transform: translateY(20px);
                         transition: all 0.2s ease-in-out;
+
                         li {
                             color: #183B56;
                             font-size: 14px;
@@ -480,7 +491,7 @@
                         }
                     }
 
-                    &:hover > ul {
+                    &:hover>ul {
                         transform: translateY(0);
                         opacity: 1;
                         visibility: visible;
@@ -496,7 +507,7 @@
                     }
                 }
             }
-            
+
 
 
         }
