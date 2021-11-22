@@ -4333,4 +4333,348 @@ input::-ms-clear {
     border-radius: 10px;
   }
 }
+
+.hero-post {
+  max-width: 1280px;
+  margin-top: 130px;
+  border-radius: 12px;
+  padding-bottom: 40px;
+  background-image: url(../images/post/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-post h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 5px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.hero-post .hero-span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #D9D9D9;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.hero-post .search {
+  padding: 0px 30px;
+  top: 440px;
+  width: 800px;
+  height: 185px;
+  background-color: #fff;
+  z-index: 3;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.hero-post .search ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.hero-post .search ul li {
+  color: #9C9C9C;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 25px 0px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hero-post .search ul .ative {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.hero-post .search hr {
+  background-color: #EFEFEF;
+}
+
+.hero-post .search .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.hero-post .search .label a {
+  padding: 18px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #226DD9;
+  border-radius: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero-post .search .label a:hover {
+  opacity: 0.7;
+}
+
+.hero-post .search .label p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5A7184;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hero-post .search .label input {
+  border: none;
+  margin-top: 5px;
+  width: 200px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  cursor: text;
+}
+
+.hero-post .search .label input::-webkit-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.hero-post .search .label input:-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.hero-post .search .label input::-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.hero-post .search .label input::placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.hero-post .search .label input:focus {
+  outline: none;
+}
+
+.post .space-100px {
+  height: 75px;
+}
+
+.post .title-section {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.post-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.post-tag .item {
+  padding: 6px 15px;
+  border-radius: 50px;
+  background-color: #3588FF1e;
+  color: #3588FF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post .fiter {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .fiter p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A7184;
+  padding-right: 8px;
+}
+
+.post .fiter p::after {
+  content: " Gần Nhất";
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.post-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px 30px;
+  grid-gap: 30px 30px;
+}
+
+.post-main .item {
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  color: #183B56;
+}
+
+.post-main .item .tag {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 12px;
+  background-color: #E954321e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 60px;
+  margin-bottom: 20px;
+}
+
+.post-main .item .tag .dot {
+  background-color: #E95432;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.post-main .item .tag p {
+  color: #183B56;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.post-main .item .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.post-main .item .infor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px;
+  gap: 20px;
+}
+
+.post-main .item .infor-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-main .item .infor-item ion-icon {
+  color: #5A7184;
+  font-size: 16px;
+}
+
+.post-main .item .infor-item p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #5A7184;
+}
+
+.post-main .item .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-main .item .user-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-main .item .user-item .avt {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.post-main .item .user-item .avt img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-main .item .user-item .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #183B56;
+}
+
+.post-main .item .user .dot {
+  background: #E8EAED;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.post-main .item .user .time {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.exam .space-100px {
+  height: 75px;
+}
+
+.exam .title-section {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.exam .span-section {
+  font-size: 18px;
+}
 /*# sourceMappingURL=app.css.map */

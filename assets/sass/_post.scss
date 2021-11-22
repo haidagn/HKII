@@ -1,0 +1,299 @@
+.hero-post {
+    max-width: 1280px;
+    margin-top: 130px;
+    border-radius: 12px;
+    padding-bottom: 40px;
+    background-image: url(../images/post/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 5px;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .hero-span {
+        font-size: 18px;
+        font-weight: 500;
+        color: #D9D9D9;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    .search {
+        padding: 0px 30px;
+        top: 440px;
+        width: 800px;
+        height: 185px;
+        background-color: #fff;
+        z-index: 3;
+        border-radius: 20px;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            gap: 32px;
+
+            li {
+                color: #9C9C9C;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                padding: 25px 0px;
+                padding-bottom: 20px;
+                transition: all 0.3s ease;
+                border-bottom: 2px solid rgba(255, 255, 255, 0);
+                user-select: none;
+            }
+
+            .ative {
+                border-bottom: 2px solid #000;
+                color: #000;
+            }
+        }
+
+        hr {
+            background-color: #EFEFEF;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+            a {
+                padding: 18px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #226DD9;
+                border-radius: 15px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: #5A7184;
+                pointer-events: none;
+                user-select: none;
+            }
+
+            input {
+                border: none;
+                margin-top: 5px;
+                width: 200px;
+                height: 40px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+                cursor: text;
+
+                &::placeholder {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, 0.349)
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.post {
+    .space-100px {
+        height: 75px;
+    }
+
+    .title-section {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    &-tag {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+
+        .item {
+            padding: 6px 15px;
+            border-radius: 50px;
+            background-color: #3588FF1e;
+            color: #3588FF;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+    }
+
+    .fiter {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #5A7184;
+            padding-right: 8px;
+
+            &::after {
+                content: " Gần Nhất";
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px 30px ;
+        grid-gap: 30px 30px ;
+        .item {
+            border-radius: 5px;
+            padding: 30px;
+            background-color: #FFFFFF;
+            color: #183B56;
+            .tag {
+                width: 90px;
+                display: flex;
+                padding: 5px 12px;
+                background-color: #E954321e;
+                align-items: center;
+                border-radius: 60px;
+                margin-bottom: 20px;
+                .dot {
+                    background-color: #E95432;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
+                }
+
+                p {
+                    color: #183B56;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding-left: 8px;
+                }
+            }
+
+            .title {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 18px;
+            }
+
+            .infor {
+                display: flex;
+                margin-bottom: 45px;
+                gap: 20px;
+                &-item {
+                    display: flex;
+                    align-items: center;
+
+                    ion-icon {
+                        color: #5A7184;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding-left: 10px;
+                        color: #5A7184;
+                    }
+                }
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    .avt {
+                        overflow: hidden;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 12px;
+                        margin-right: 15px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #183B56;
+                    }
+                }
+
+                .dot {
+                    background: #E8EAED;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 5px;
+                    margin: 0px 10px;
+                }
+                .time {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.exam {
+    .space-100px {
+        height: 75px;
+    }
+
+    .title-section {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .span-section {
+        font-size: 18px;
+    }
+}

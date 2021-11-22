@@ -108,6 +108,6 @@ window.addEventListener('scroll', () => {
 })
 
 // active search 
-$(document).on('click', '#hero .search ul li', function () {
+$(document).on('click', '#hero-search ul li', function () {
     $(this).addClass('ative').siblings().removeClass('ative')
 })
